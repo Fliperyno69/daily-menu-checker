@@ -1,0 +1,581 @@
+
+<!DOCTYPE html>
+<html lang="cs" style="background: none;">
+<head>
+	<meta charset="utf-8" lang="cs">
+	<meta name="description" content="Rej DILKY">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Rej DILKY">
+	<meta name="keywords" content="Rej DILKY">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title id="snippet--title">
+		Rej DILKY
+
+	</title>
+
+	<link rel="stylesheet" media="all" href="https://www.rejdilky.cz/vendor/fonts/Avenir.Next.LT.Pro/avenir.css">
+	<link rel="stylesheet" media="all" href="https://www.rejdilky.cz/css/front.min.css?v=1718344391">
+	<link rel="stylesheet" media="all" href="https://www.rejdilky.cz/vendor/jcrop/css/jquery.Jcrop.min.css">
+	<link rel="shortcut icon" href="/favicon.png">
+	<link rel="stylesheet" media="all" href="https://www.rejdilky.cz/vendor/lightbox2/css/lightbox.min.css">
+	<meta name="robots" content="index, follow"/>
+
+
+</head>
+
+<body class="m-default p-api a-menu-for-web pt-0" data-no-cookie="true">
+<main class="m-default p-api a-menu-for-web">
+
+	<div class="container-fluid ">
+
+		<div class="row flex-column-reverse flex-lg-row ">
+			<section class="col-60 pt-3 main-section">
+
+				<div id="snippet--h1">
+				</div>
+				<div id="snippet--flashMessage">
+
+
+				</div>
+
+<div class="com-food-menu-front pb-4" id="snippet-frontFoodMenu-main">
+		<style>
+			body.m-default.p-api.a-menu-for-web-page, body.m-default.p-api.a-menu-for-web {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.m-default.p-api.a-menu-for-web-page .btn-default, body.m-default.p-api.a-menu-for-web-page .btn-food-nav, body.m-default.p-api.a-menu-for-web .btn-default, body.m-default.p-api.a-menu-for-web .btn-food-nav {
+  color: #fff;
+  background: #000000 linear-gradient(180deg, #262626, #000000) repeat-x;
+  border-color: #000000;
+}
+body.m-default.p-api.a-menu-for-web-page .btn-default:hover, body.m-default.p-api.a-menu-for-web-page .btn-food-nav:hover, body.m-default.p-api.a-menu-for-web .btn-default:hover, body.m-default.p-api.a-menu-for-web .btn-food-nav:hover {
+  color: #fff;
+  background: black linear-gradient(180deg, #262626, black) repeat-x;
+  border-color: black;
+}
+body.m-default.p-api.a-menu-for-web-page .btn-default:focus, body.m-default.p-api.a-menu-for-web-page .btn-default.focus, body.m-default.p-api.a-menu-for-web-page .btn-food-nav:focus, body.m-default.p-api.a-menu-for-web-page .btn-food-nav.focus, body.m-default.p-api.a-menu-for-web .btn-default:focus, body.m-default.p-api.a-menu-for-web .btn-default.focus, body.m-default.p-api.a-menu-for-web .btn-food-nav:focus, body.m-default.p-api.a-menu-for-web .btn-food-nav.focus {
+  color: #fff;
+  background: black linear-gradient(180deg, #262626, black) repeat-x;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+}
+body.m-default.p-api.a-menu-for-web-page .btn-default.disabled, body.m-default.p-api.a-menu-for-web-page .btn-default:disabled, body.m-default.p-api.a-menu-for-web-page .btn-food-nav.disabled, body.m-default.p-api.a-menu-for-web-page .btn-food-nav:disabled, body.m-default.p-api.a-menu-for-web .btn-default.disabled, body.m-default.p-api.a-menu-for-web .btn-default:disabled, body.m-default.p-api.a-menu-for-web .btn-food-nav.disabled, body.m-default.p-api.a-menu-for-web .btn-food-nav:disabled {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+  background-image: none;
+}
+body.m-default.p-api.a-menu-for-web-page .btn-default:not(:disabled):not(.disabled):active, body.m-default.p-api.a-menu-for-web-page .btn-default:not(:disabled):not(.disabled).active, .show > body.m-default.p-api.a-menu-for-web-page .btn-default.dropdown-toggle, body.m-default.p-api.a-menu-for-web-page .btn-food-nav:not(:disabled):not(.disabled):active, body.m-default.p-api.a-menu-for-web-page .btn-food-nav:not(:disabled):not(.disabled).active, .show > body.m-default.p-api.a-menu-for-web-page .btn-food-nav.dropdown-toggle, body.m-default.p-api.a-menu-for-web .btn-default:not(:disabled):not(.disabled):active, body.m-default.p-api.a-menu-for-web .btn-default:not(:disabled):not(.disabled).active, .show > body.m-default.p-api.a-menu-for-web .btn-default.dropdown-toggle, body.m-default.p-api.a-menu-for-web .btn-food-nav:not(:disabled):not(.disabled):active, body.m-default.p-api.a-menu-for-web .btn-food-nav:not(:disabled):not(.disabled).active, .show > body.m-default.p-api.a-menu-for-web .btn-food-nav.dropdown-toggle {
+  color: #fff;
+  background-color: black;
+  background-image: none;
+  border-color: black;
+}
+body.m-default.p-api.a-menu-for-web-page .btn-default:not(:disabled):not(.disabled):active:focus, body.m-default.p-api.a-menu-for-web-page .btn-default:not(:disabled):not(.disabled).active:focus, .show > body.m-default.p-api.a-menu-for-web-page .btn-default.dropdown-toggle:focus, body.m-default.p-api.a-menu-for-web-page .btn-food-nav:not(:disabled):not(.disabled):active:focus, body.m-default.p-api.a-menu-for-web-page .btn-food-nav:not(:disabled):not(.disabled).active:focus, .show > body.m-default.p-api.a-menu-for-web-page .btn-food-nav.dropdown-toggle:focus, body.m-default.p-api.a-menu-for-web .btn-default:not(:disabled):not(.disabled):active:focus, body.m-default.p-api.a-menu-for-web .btn-default:not(:disabled):not(.disabled).active:focus, .show > body.m-default.p-api.a-menu-for-web .btn-default.dropdown-toggle:focus, body.m-default.p-api.a-menu-for-web .btn-food-nav:not(:disabled):not(.disabled):active:focus, body.m-default.p-api.a-menu-for-web .btn-food-nav:not(:disabled):not(.disabled).active:focus, .show > body.m-default.p-api.a-menu-for-web .btn-food-nav.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+}
+body.m-default.p-api.a-menu-for-web-page .modal, body.m-default.p-api.a-menu-for-web .modal {
+  color: #212529;
+}
+body.m-default.p-api.a-menu-for-web-page {
+  background-color: transparent;
+}
+body .com-blue-angel-anonym-create h2, body .com-food-menu-front h2 {
+  color: #000000;
+}
+body .com-blue-angel-anonym-create .tab-content .food-sub-section h3.week-menu, body .com-food-menu-front .tab-content .food-sub-section h3.week-menu {
+  color: #000000;
+}
+body .com-blue-angel-anonym-create .tab-content .food-sub-section .section-food h4.food-type, body .com-food-menu-front .tab-content .food-sub-section .section-food h4.food-type {
+  color: #000000;
+}
+body .com-blue-angel-anonym-create .modal .modal-dialog .modal-content .modal-header, body .com-food-menu-front .modal .modal-dialog .modal-content .modal-header {
+  background-color: #000000;
+  color: #fff;
+}
+body .com-blue-angel-anonym-create .badge-food-menu, body .com-food-menu-front .badge-food-menu {
+  color: #000000;
+  background-color: #fff;
+  font-size: 90%;
+}
+body main.p-shop .btn-food-menu, body .com-food-menu-front .btn-food-menu {
+  color: #fff;
+  background: #000000 linear-gradient(180deg, #262626, #000000) repeat-x;
+  border-color: #000000;
+}
+body main.p-shop .btn-food-menu:hover, body .com-food-menu-front .btn-food-menu:hover {
+  color: #fff;
+  background: black linear-gradient(180deg, #262626, black) repeat-x;
+  border-color: black;
+}
+body main.p-shop .btn-food-menu:focus, body main.p-shop .btn-food-menu.focus, body .com-food-menu-front .btn-food-menu:focus, body .com-food-menu-front .btn-food-menu.focus {
+  color: #fff;
+  background: black linear-gradient(180deg, #262626, black) repeat-x;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+}
+body main.p-shop .btn-food-menu.disabled, body main.p-shop .btn-food-menu:disabled, body .com-food-menu-front .btn-food-menu.disabled, body .com-food-menu-front .btn-food-menu:disabled {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+  background-image: none;
+}
+body main.p-shop .btn-food-menu:not(:disabled):not(.disabled):active, body main.p-shop .btn-food-menu:not(:disabled):not(.disabled).active, .show > body main.p-shop .btn-food-menu.dropdown-toggle, body .com-food-menu-front .btn-food-menu:not(:disabled):not(.disabled):active, body .com-food-menu-front .btn-food-menu:not(:disabled):not(.disabled).active, .show > body .com-food-menu-front .btn-food-menu.dropdown-toggle {
+  color: #fff;
+  background-color: black;
+  background-image: none;
+  border-color: black;
+}
+body main.p-shop .btn-food-menu:not(:disabled):not(.disabled):active:focus, body main.p-shop .btn-food-menu:not(:disabled):not(.disabled).active:focus, .show > body main.p-shop .btn-food-menu.dropdown-toggle:focus, body .com-food-menu-front .btn-food-menu:not(:disabled):not(.disabled):active:focus, body .com-food-menu-front .btn-food-menu:not(:disabled):not(.disabled).active:focus, .show > body .com-food-menu-front .btn-food-menu.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+}
+body main.p-shop form .btn-outline-rej, body .com-food-menu-front form .btn-outline-rej {
+  color: #000000;
+  border-color: #000000;
+}
+body main.p-shop form .btn-outline-rej:hover, body .com-food-menu-front form .btn-outline-rej:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+body main.p-shop form .btn-outline-rej:focus, body main.p-shop form .btn-outline-rej.focus, body .com-food-menu-front form .btn-outline-rej:focus, body .com-food-menu-front form .btn-outline-rej.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+body main.p-shop form .btn-outline-rej.disabled, body main.p-shop form .btn-outline-rej:disabled, body .com-food-menu-front form .btn-outline-rej.disabled, body .com-food-menu-front form .btn-outline-rej:disabled {
+  color: #000000;
+  background-color: transparent;
+}
+body main.p-shop form .btn-outline-rej:not(:disabled):not(.disabled):active, body main.p-shop form .btn-outline-rej:not(:disabled):not(.disabled).active, .show > body main.p-shop form .btn-outline-rej.dropdown-toggle, body .com-food-menu-front form .btn-outline-rej:not(:disabled):not(.disabled):active, body .com-food-menu-front form .btn-outline-rej:not(:disabled):not(.disabled).active, .show > body .com-food-menu-front form .btn-outline-rej.dropdown-toggle {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+body main.p-shop form .btn-outline-rej:not(:disabled):not(.disabled):active:focus, body main.p-shop form .btn-outline-rej:not(:disabled):not(.disabled).active:focus, .show > body main.p-shop form .btn-outline-rej.dropdown-toggle:focus, body .com-food-menu-front form .btn-outline-rej:not(:disabled):not(.disabled):active:focus, body .com-food-menu-front form .btn-outline-rej:not(:disabled):not(.disabled).active:focus, .show > body .com-food-menu-front form .btn-outline-rej.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5);
+}
+body main.p-shop .btn-food-menu-ok, body .com-food-menu-front .btn-food-menu-ok {
+  color: #fff;
+  background: #000000 linear-gradient(180deg, #262626, #000000) repeat-x;
+  border-color: #000000;
+}
+body main.p-shop .btn-food-menu-ok:hover, body .com-food-menu-front .btn-food-menu-ok:hover {
+  color: #fff;
+  background: black linear-gradient(180deg, #262626, black) repeat-x;
+  border-color: black;
+}
+body main.p-shop .btn-food-menu-ok:focus, body main.p-shop .btn-food-menu-ok.focus, body .com-food-menu-front .btn-food-menu-ok:focus, body .com-food-menu-front .btn-food-menu-ok.focus {
+  color: #fff;
+  background: black linear-gradient(180deg, #262626, black) repeat-x;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+}
+body main.p-shop .btn-food-menu-ok.disabled, body main.p-shop .btn-food-menu-ok:disabled, body .com-food-menu-front .btn-food-menu-ok.disabled, body .com-food-menu-front .btn-food-menu-ok:disabled {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+  background-image: none;
+}
+body main.p-shop .btn-food-menu-ok:not(:disabled):not(.disabled):active, body main.p-shop .btn-food-menu-ok:not(:disabled):not(.disabled).active, .show > body main.p-shop .btn-food-menu-ok.dropdown-toggle, body .com-food-menu-front .btn-food-menu-ok:not(:disabled):not(.disabled):active, body .com-food-menu-front .btn-food-menu-ok:not(:disabled):not(.disabled).active, .show > body .com-food-menu-front .btn-food-menu-ok.dropdown-toggle {
+  color: #fff;
+  background-color: black;
+  background-image: none;
+  border-color: black;
+}
+body main.p-shop .btn-food-menu-ok:not(:disabled):not(.disabled):active:focus, body main.p-shop .btn-food-menu-ok:not(:disabled):not(.disabled).active:focus, .show > body main.p-shop .btn-food-menu-ok.dropdown-toggle:focus, body .com-food-menu-front .btn-food-menu-ok:not(:disabled):not(.disabled):active:focus, body .com-food-menu-front .btn-food-menu-ok:not(:disabled):not(.disabled).active:focus, .show > body .com-food-menu-front .btn-food-menu-ok.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+}
+body .com-blue-angel-anonym-create .btn-taxi {
+  color: #fff;
+  background: #000000 linear-gradient(180deg, #262626, #000000) repeat-x;
+  border-color: #000000;
+}
+body .com-blue-angel-anonym-create .btn-taxi:hover {
+  color: #fff;
+  background: black linear-gradient(180deg, #262626, black) repeat-x;
+  border-color: black;
+}
+body .com-blue-angel-anonym-create .btn-taxi:focus, body .com-blue-angel-anonym-create .btn-taxi.focus {
+  color: #fff;
+  background: black linear-gradient(180deg, #262626, black) repeat-x;
+  border-color: black;
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+}
+body .com-blue-angel-anonym-create .btn-taxi.disabled, body .com-blue-angel-anonym-create .btn-taxi:disabled {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+  background-image: none;
+}
+body .com-blue-angel-anonym-create .btn-taxi:not(:disabled):not(.disabled):active, body .com-blue-angel-anonym-create .btn-taxi:not(:disabled):not(.disabled).active, .show > body .com-blue-angel-anonym-create .btn-taxi.dropdown-toggle {
+  color: #fff;
+  background-color: black;
+  background-image: none;
+  border-color: black;
+}
+body .com-blue-angel-anonym-create .btn-taxi:not(:disabled):not(.disabled):active:focus, body .com-blue-angel-anonym-create .btn-taxi:not(:disabled):not(.disabled).active:focus, .show > body .com-blue-angel-anonym-create .btn-taxi.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5);
+}
+body main.p-shop form [type=radio] + span::before, body main.p-shop form [type=radio] + span:before, body main.p-shop form [type=checkbox] + span::before, body main.p-shop form [type=checkbox] + span:before {
+  color: #000000;
+}
+body .modal .modal-dialog .modal-content .modal-header {
+  background-color: #000000;
+  color: #fff;
+}
+
+		</style>
+
+
+	<div id="snippet-frontFoodMenu-cartInfo">
+		<div class="pb-3 pb-md-0 ">
+			<div class="row">
+				<div class="col">
+					<h2 class="food-menu-title mb-0">
+							Denní menu
+					</h2>
+				</div>
+			</div>
+		</div>
+
+		<div class="flash-section">
+
+
+		</div>
+		<div class="pb-4"></div>
+	</div>
+	<div id="snippet-frontFoodMenu-flashMessage">
+	</div>
+
+
+	<nav>
+		<div class="nav nav-tabs justify-content-left border-bottom-0 btn-group" id="nav-tab" role="tablist">
+			<div class="nav-item nav-link active btn btn-food-nav food-menu-nav-item flex-grow-0 rounded-0"
+					id="nav-d37075b9-24c6-4ec5-9393-6d67bd1279f5" data-bs-toggle="tab" data-coreui-toggle="tab" href="#rsd37075b9-24c6-4ec5-9393-6d67bd1279f5"
+					aria-controls="nav-home" aria-selected="true">
+				Denní menu
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="tab-content">
+		<div class="tab-pane fade show active"
+				
+				id="rsd37075b9-24c6-4ec5-9393-6d67bd1279f5"
+				role="tabpanel"
+				aria-labelledby="nav-d37075b9-24c6-4ec5-9393-6d67bd1279f5">
+
+			
+					<div class="section-food">
+
+
+	</div>
+ 
+			
+
+
+				<div class="food-sub-section mt-3">
+
+					<h3 class="text-start py-3 week-menu" >
+						Středa, 03.07.2024
+					</h3>
+						<div class="section-food">
+
+
+
+				<div class="pt-2 pb-1 ">
+					<h4 class="food-type" >
+						Polévka
+					</h4>
+				</div>
+
+			<div class="row pb-3 pt-2 py-md-1 ">
+
+
+
+
+				<div class="col align-self-center flex-grow-1 order-2 order-xs-4 ">
+					<div >
+						Česnečka
+					</div>
+				</div>
+				<div class="w-100 d-xs-none order-3 order-xs-5 "></div>
+				<div class="col no-min-width flex-grow-0 text-end align-self-center  order-6 ">
+						<div class="text-nowrap">
+							59 Kč
+						</div>
+				</div>
+			</div>
+
+				<div class="pt-2 pb-1 ">
+					<h4 class="food-type" >
+						Hlavní jídlo
+					</h4>
+				</div>
+
+			<div class="row pb-3 pt-2 py-md-1 ">
+
+
+
+
+				<div class="col no-min-width flex-grow-0  align-self-center order-1 order-xs-2 "> 
+					<div class="text-nowrap">
+						<strong>1</strong>
+					</div>
+				</div>
+				<div class="col align-self-center flex-grow-1 order-2 order-xs-4 ">
+					<div >
+						Mozzarella s rajčaty, Prosciutto, Focaccia
+					</div>
+				</div>
+				<div class="w-100 d-xs-none order-3 order-xs-5 "></div>
+				<div class="col no-min-width flex-grow-0 text-end align-self-center  order-6 ">
+						<div class="text-nowrap">
+							209 Kč
+						</div>
+				</div>
+			</div>
+
+			<div class="row pb-3 pt-2 py-md-1 ">
+
+
+
+
+				<div class="col no-min-width flex-grow-0  align-self-center order-1 order-xs-2 "> 
+					<div class="text-nowrap">
+						<strong>2</strong>
+					</div>
+				</div>
+				<div class="col align-self-center flex-grow-1 order-2 order-xs-4 ">
+					<div >
+						Penne s fenyklem, smetanou a pecorinem
+					</div>
+				</div>
+				<div class="w-100 d-xs-none order-3 order-xs-5 "></div>
+				<div class="col no-min-width flex-grow-0 text-end align-self-center  order-6 ">
+						<div class="text-nowrap">
+							179 Kč
+						</div>
+				</div>
+			</div>
+
+			<div class="row pb-3 pt-2 py-md-1 ">
+
+
+
+
+				<div class="col no-min-width flex-grow-0  align-self-center order-1 order-xs-2 "> 
+					<div class="text-nowrap">
+						<strong>3</strong>
+					</div>
+				</div>
+				<div class="col align-self-center flex-grow-1 order-2 order-xs-4 ">
+					<div >
+						Smažený květák s vařeným bramborem a tatarkou
+					</div>
+				</div>
+				<div class="w-100 d-xs-none order-3 order-xs-5 "></div>
+				<div class="col no-min-width flex-grow-0 text-end align-self-center  order-6 ">
+						<div class="text-nowrap">
+							189 Kč
+						</div>
+				</div>
+			</div>
+
+			<div class="row pb-3 pt-2 py-md-1 ">
+
+
+
+
+				<div class="col no-min-width flex-grow-0  align-self-center order-1 order-xs-2 "> 
+					<div class="text-nowrap">
+						<strong>4</strong>
+					</div>
+				</div>
+				<div class="col align-self-center flex-grow-1 order-2 order-xs-4 ">
+					<div >
+						Kachní prso s glazovanou mrkví a pomerančovou omáčkou
+					</div>
+				</div>
+				<div class="w-100 d-xs-none order-3 order-xs-5 "></div>
+				<div class="col no-min-width flex-grow-0 text-end align-self-center  order-6 ">
+						<div class="text-nowrap">
+							259 Kč
+						</div>
+				</div>
+			</div>
+	</div>
+ 
+				</div>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="justAddedToCartModal"
+		 data-coreui-backdrop="static"
+		 data-coreui-keyboard="false"
+		 data-coreui-focus="false"
+
+		 data-bs-backdrop="static"
+		 data-bs-keyboard="false"
+		 data-bs-focus="false"
+
+		 data-keyboard="false"
+		 data-backdrop="static"
+		 data-focus="false"
+
+		 tabindex="-1"
+		 aria-labelledby="justAddedToCartModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-md modal-dialog-centered">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<h5 class="modal-title" id="justAddedToCartModalLabel">Položka vložena do košíku</h5>
+					<button type="button" class="btn-close close"
+							data-coreui-dismiss="modal"
+							data-bs-dismiss="modal"
+							data-dismiss="modal"
+							aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+								<div id="snippet-frontFoodMenu-cartDialogContent">
+		</div>
+
+				</div>
+				<div class="modal-footer">
+							
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+
+	<!-- Modal -->
+	<div class="modal fade" id="canNotAddToCartModal"
+		 data-coreui-backdrop="static"
+		 data-coreui-keyboard="false"
+		 data-coreui-focus="false"
+
+		 data-bs-backdrop="static"
+		 data-bs-keyboard="false"
+		 data-bs-focus="false"
+
+		 data-keyboard="false"
+		 data-backdrop="static"
+		 data-focus="false"
+
+		 tabindex="-1"
+		 aria-labelledby="canNotAddToCartModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-md modal-dialog-centered">
+			<div class="modal-content ">
+				<div class="modal-header">
+					<h5 class="modal-title" id="canNotAddToCartModalLabel">Položka nelze vložit do košíku</h5>
+					<button type="button" class="btn-close close"
+							data-coreui-dismiss="modal"
+							data-bs-dismiss="modal"
+							data-dismiss="modal"
+							aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+								<div id="snippet-frontFoodMenu-cartFailDialogContent">
+		</div>
+
+				</div>
+				<div class="modal-footer">
+							
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+        var eventSource = null;
+        var eventOrigin = null;
+        var sourceFrame = null;
+        window.addEventListener('message', function (event) {
+            var messageContent = event.data.split(':');
+            var myType = messageContent[0];
+            // var topOffset = messageContent[1];
+            //var currentScroll = messageContent[2];
+            if (myType === 'frame') {
+                sourceFrame = messageContent[3];
+                $("#justAddedToCartModal .modal-dialog")
+                    .removeClass('modal-dialog-centered');
+            } else if (myType === 'getHeight') {
+                eventSource = event.source;
+                eventOrigin = event.origin;
+                sourceFrame = messageContent[2];
+                var msg = "contentHeight:" + document.body.scrollHeight;
+                if (sourceFrame !== undefined) {
+                    msg = msg + ':' + sourceFrame;
+                }
+                event.source.postMessage(msg, event.origin);
+            }
+
+        }, false);
+
+        window.addEventListener('load', function () {
+            $('div[data-bs-toggle="tab"]').on('shown.bs.tab', function () {
+                if (eventSource !== null) {
+                    var msg = "contentHeight:" + document.body.scrollHeight;
+                    if (sourceFrame !== undefined) {
+                        msg = msg + ':' + sourceFrame;
+                    }
+                    eventSource.postMessage(msg, eventOrigin);
+                }
+            })
+        });
+
+	</script>
+</div>
+
+
+			</section>
+		</div>
+	</div>
+</main>
+
+	<script src="/vendor/jquery/jquery.js"></script>
+	<script src="https://www.rejdilky.cz/js/main.min.js?v=1718344264"></script>
+	<script type="text/javascript">
+        let clickY = 0;
+        $(".btn.btn-rej.btn-food-menu.ajax").on('click.prr', function (e) {
+            clickY = e.pageY;
+        });
+        $("#justAddedToCartModal").on('show.bs.modal', function (e) {
+            if (!$("#justAddedToCartModal .modal-dialog").hasClass('modal-dialog-centered')) {
+                let scrollHeight = document.body.scrollHeight;
+                let scrollWidth = document.body.scrollWidth;
+                let modalDialog = $("#justAddedToCartModal .modal-content");
+                let modalHeight = 280;
+                if (scrollWidth < 300) {
+                    modalHeight = 500
+                } else if (scrollWidth < 435) {
+                    modalHeight = 360;
+                }
+                clickY = clickY - 175;
+                if (clickY < 0) {
+                    clickY = 10;
+                }
+
+                if (clickY + modalHeight > scrollHeight) {
+                    clickY -= modalHeight / 2;
+                }
+                if (clickY < 0) {
+                    clickY = 10;
+                }
+                modalDialog.css('top', clickY + "px");
+            }
+        });
+	</script>
+
+
+
+<script type="text/javascript" src="https://www.rejdilky.cz/vendor/lightbox2/js/lightbox.min.js"></script>
+</body>
+</html>
