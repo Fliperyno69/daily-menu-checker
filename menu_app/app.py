@@ -12,25 +12,21 @@ def fetch_daily_menu():
 
     soup = BeautifulSoup(response.text, 'html.parser')
 
-    # Log the entire HTML of the iframe content for debugging
     with open('debug_iframe.html', 'w', encoding='utf-8') as file:
         file.write(response.text)
 
-    # Find the food-sub-section div
     food_sub_section = soup.find('div', class_='food-sub-section')
     if not food_sub_section:
         return "Daily menu not found. Check debug_iframe.html for the page's HTML structure."
 
-    # Log the HTML of food-sub-section for debugging
     with open('debug_food_sub_section.html', 'w', encoding='utf-8') as file:
         file.write(str(food_sub_section))
 
-    # Extract text from specific elements within section-food inside food-sub-section
     menu_items = []
     for section in food_sub_section.find_all('div', class_='section-food'):
         for div in section.find_all('div', recursive=False):
-            text = div.get_text(" ", strip=True)  # Use space as separator to insert spaces between text
-            if text:  # Only add non-empty text
+            text = div.get_text(" ", strip=True)  
+            if text:  
                 menu_items.append(text)
 
     daily_menu = "\n".join(menu_items)
